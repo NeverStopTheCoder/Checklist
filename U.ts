@@ -1,7 +1,7 @@
 // Add your code here
 //%block="Checklist"
 //% weight=75 color=#CC3333 icon=""
-namespace custom {
+namespace custo {
     // Array to store tasks and their completion status
     let tasks: { name: string, completed: boolean }[] = [];
 

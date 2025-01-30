@@ -1,10 +1,10 @@
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    custom.showChecklist()
+    custo.showChecklist()
 })
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
-    custom.hideChecklist()
+    custo.hideChecklist()
 })
-custom.drawTasks(
+custo.drawTasks(
 "1",
 "2",
 "3",
@@ -16,9 +16,9 @@ custom.drawTasks(
 "9"
 )
 forever(function () {
-    if (custom.didTaskJustGetUnchecked(1)) {
+    if (custo.didTaskJustGetUnchecked(1)) {
         info.setScore(0)
-    } else if (custom.didTaskJustGetChecked(1)) {
+    } else if (custo.didTaskJustGetChecked(1)) {
         info.changeScoreBy(1)
     }
 })
